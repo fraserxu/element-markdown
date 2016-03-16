@@ -6,7 +6,6 @@ module.exports = function (source, opts) {
     marked.setOptions(opts)
   }
 
-  var markedHtml = marked(source)
   var container = document.createElement('span')
   container.innerHTML = marked(source)
 
