@@ -16,9 +16,16 @@ $ npm i element-markdown
 
 ### Usage
 
+`\`${Markdown(source, opts)}\``
+
+* source - Markdown source String
+* opts - Marked options
+
+### Example
+
 ```JavaScript
 var yo = require('yo-yo')
-var Markdown = require('../index.js')
+var Markdown = require('element-markdown')
 
 function render () {
   return yo`
