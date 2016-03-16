@@ -16,11 +16,6 @@ $ npm i element-markdown
 
 ### Usage
 
-`\`${Markdown(source, opts)}\``
-
-* source - Markdown source String
-* opts - Marked options
-
 ### Example
 
 ```JavaScript
@@ -28,9 +23,13 @@ var yo = require('yo-yo')
 var Markdown = require('element-markdown')
 
 function render () {
+  var opts = {
+    gfm: false
+  }
+
   return yo`
     <div>
-    ${Markdown('I\'m a [marked](https://github.com/chjj/marked) rendered **markdown** content.')}
+    ${Markdown('I\'m a [marked](https://github.com/chjj/marked) rendered **markdown** content.', opts)}
     </div>
   `
 }
@@ -38,6 +37,9 @@ function render () {
 var app = render()
 document.body.appendChild(app)
 ```
+
+* source - Markdown source String
+* opts - Marked options
 
 Check [marked](https://github.com/chjj/marked) for available options.
 
