@@ -16,8 +16,6 @@ $ npm i element-markdown
 
 ### Usage
 
-### Example
-
 ```JavaScript
 var yo = require('yo-yo')
 var Markdown = require('element-markdown')
@@ -37,6 +35,8 @@ function render () {
 var app = render()
 document.body.appendChild(app)
 ```
+
+API `Markdown(source, opts)`
 
 * source - Markdown source String
 * opts - Marked options
